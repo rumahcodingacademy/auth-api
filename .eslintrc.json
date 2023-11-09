@@ -11,5 +11,10 @@
         "ecmaVersion": 12
     },
     "rules": {
+        "linebreak-style": "off",
+        "no-underscore-dangle": "off",
+        "class-methode-use-this": "off",
+        "no-unused-vars": "off",
+        "no console": "off"
     }
 }
