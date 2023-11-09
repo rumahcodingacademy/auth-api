@@ -2,8 +2,7 @@
     "env": {
         "commonjs": true,
         "es2021": true,
-        "node": true,
-        "jest": true
+        "node": true
     },
     "extends": [
         "airbnb-base"
@@ -12,10 +11,5 @@
         "ecmaVersion": 12
     },
     "rules": {
-        "linebreak-style": "off",
-        "no-underscore-dangle": "off",
-        "class-methods-use-this": "off",
-        "no-unused-vars": "off",
-        "no-console": "off"
     }
 }
