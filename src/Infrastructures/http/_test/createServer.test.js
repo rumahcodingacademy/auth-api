@@ -29,6 +29,7 @@ describe('HTTP server', () => {
     expect(response.statusCode).toEqual(404);
   });
 
+  // Test CI
   describe('when POST /users', () => {
     it('should response 201 and persisted user', async () => {
       // Arrange
