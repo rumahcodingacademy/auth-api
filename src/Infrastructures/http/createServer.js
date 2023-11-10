@@ -20,7 +20,7 @@ const createServer = async (container) => {
       options: { container },
     },
   ]);
-
+  // test feature say hello world
   server.route({
     method: 'GET',
     path: '/',
