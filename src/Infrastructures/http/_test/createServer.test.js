@@ -31,7 +31,6 @@ describe('HTTP server', () => {
   });
 
   // test CI add
-  /*
   describe('when GET /', () => {
     it('should return 200 and hello world', async () => {
       // Arrange
@@ -47,7 +46,6 @@ describe('HTTP server', () => {
       expect(responseJson.value).toEqual('Hello world!');
     });
   });
-  */
 
   describe('when POST /users', () => {
     it('should response 201 and persisted user', async () => {
