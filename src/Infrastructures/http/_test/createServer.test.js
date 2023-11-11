@@ -29,6 +29,7 @@ describe('HTTP server', () => {
     expect(response.statusCode).toEqual(404);
   });
 
+  /*
   describe('when GET /', () => {
     it('should return 200 and help page', async () => {
       // Arrange
@@ -42,6 +43,23 @@ describe('HTTP server', () => {
       const responseJson = JSON.parse(response.payload);
       expect(response.statusCode).toEqual(200);
       expect(responseJson.value).toEqual('Help Page!');
+    });
+  });
+  */
+
+  describe('when GET /', () => {
+    it('should return 200 and ask page', async () => {
+      // Arrange
+      const server = await createServer({});
+      // Action
+      const response = await server.inject({
+        method: 'GET',
+        url: '/ask',
+      });
+      // Assert
+      const responseJson = JSON.parse(response.payload);
+      expect(response.statusCode).toEqual(200);
+      expect(responseJson.value).toEqual('Ask Page!');
     });
   });
 
