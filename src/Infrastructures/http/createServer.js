@@ -21,6 +21,13 @@ const createServer = async (container) => {
     },
   ]);
 
+  server.route({
+    method: 'GET',
+    path: '/help',
+    handler: () => ({
+      value: 'Help Page!',
+    }),
+  });
   // fitur & test baru, ditulis di branch feature
 
   server.ext('onPreResponse', (request, h) => {
