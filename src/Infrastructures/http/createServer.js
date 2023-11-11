@@ -21,36 +21,14 @@ const createServer = async (container) => {
     },
   ]);
 
-  server.route(
-    /*
-    {
-      method: 'GET',
-      path: '/help',
-      handler: () => ({
-        value: 'Help Page!',
-      }),
-    },
-    */
-    {
-      method: 'GET',
-      path: '/',
-      handler: () => ({
-        value: 'Ask Page!',
-      }),
-    },
-  );
-
-  /*
+  // fitur & test baru, ditulis di branch feature
   server.route({
     method: 'GET',
-    path: '/ask',
+    path: '/',
     handler: () => ({
-      value: 'Ask Page!',
+      value: 'Hello world!',
     }),
   });
-  */
-
-  // fitur & test baru, ditulis di branch feature
 
   server.ext('onPreResponse', (request, h) => {
     // mendapatkan konteks response dari request
