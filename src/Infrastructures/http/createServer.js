@@ -21,6 +21,14 @@ const createServer = async (container) => {
     },
   ]);
 
+  server.route({
+    method: 'GET',
+    path: '/help',
+    handler: () => ({
+      value: 'Help Page!',
+    }),
+  });
+
   server.ext('onPreResponse', (request, h) => {
     // mendapatkan konteks response dari request
     const { response } = request;
