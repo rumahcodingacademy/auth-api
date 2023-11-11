@@ -33,7 +33,7 @@ const createServer = async (container) => {
     */
     {
       method: 'GET',
-      path: '/ask',
+      path: '/',
       handler: () => ({
         value: 'Ask Page!',
       }),
