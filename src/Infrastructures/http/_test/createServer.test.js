@@ -29,6 +29,7 @@ describe('HTTP server', () => {
     expect(response.statusCode).toEqual(404);
   });
 
+  /*
   describe('when GET /', () => {
     it('should return 200 and help page', async () => {
       // Arrange
@@ -44,9 +45,10 @@ describe('HTTP server', () => {
       expect(responseJson.value).toEqual('Help Page!');
     });
   });
+  */
 
   describe('when GET /', () => {
-    it('should return 200 and help page', async () => {
+    it('should return 200 and ask page', async () => {
       // Arrange
       const server = await createServer({});
       // Action

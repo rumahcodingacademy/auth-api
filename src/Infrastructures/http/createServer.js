@@ -21,14 +21,26 @@ const createServer = async (container) => {
     },
   ]);
 
-  server.route({
-    method: 'GET',
-    path: '/help',
-    handler: () => ({
-      value: 'Help Page!',
-    }),
-  });
+  server.route(
+    /*
+    {
+      method: 'GET',
+      path: '/help',
+      handler: () => ({
+        value: 'Help Page!',
+      }),
+    },
+    */
+    {
+      method: 'GET',
+      path: '/ask',
+      handler: () => ({
+        value: 'Ask Page!',
+      }),
+    },
+  );
 
+  /*
   server.route({
     method: 'GET',
     path: '/ask',
@@ -36,6 +48,7 @@ const createServer = async (container) => {
       value: 'Ask Page!',
     }),
   });
+  */
 
   // fitur & test baru, ditulis di branch feature
 
