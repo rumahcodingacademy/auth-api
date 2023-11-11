@@ -21,6 +21,8 @@ const createServer = async (container) => {
     },
   ]);
 
+  // fitur & test baru, ditulis di branch feature
+
   server.ext('onPreResponse', (request, h) => {
     // mendapatkan konteks response dari request
     const { response } = request;
