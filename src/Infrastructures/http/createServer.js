@@ -28,6 +28,15 @@ const createServer = async (container) => {
       value: 'Help Page!',
     }),
   });
+
+  server.route({
+    method: 'GET',
+    path: '/ask',
+    handler: () => ({
+      value: 'Ask Page!',
+    }),
+  });
+
   // fitur & test baru, ditulis di branch feature
 
   server.ext('onPreResponse', (request, h) => {
